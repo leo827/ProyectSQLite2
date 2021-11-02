@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarRegistroActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/imagen_store"
+            android:textColor="@color/text_redesign"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+
+    <!-- ImageView: Imagen Perfil-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_store"
+        app:civ_border_color="@color/colorGray1"
+        android:layout_centerInParent="true"
+        app:civ_border_overlay="true"
+        app:civ_border_width="1dp"
+        tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/ingresar_datos"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/details_store"
+            android:textStyle="bold" />
+
+
+
+    <!-- EditText: Nombre de Usuario-->
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_below="@+id/profileIv"
+        android:inputType="textPersonName|textCapWords"
+        android:hint="Nombre"/>
+
+    <!-- EditText: Telefono de Usuario-->
+    <EditText
+    android:id="@+id/phoneEt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="15dp"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+    android:layout_below="@+id/nameEt"
+    android:hint="NIT"/>
+
+    <!-- EditText: Email de Usuario-->
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_below="@+id/phoneEt"
+        android:hint="ubicación"/>
+
+    <!-- EditText: DOB de Usuario-->
+    <EditText
+        android:id="@+id/dobEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:layout_below="@+id/emailEt"
+
+        android:hint="horario de atención"/>
+
+    <!-- EditText: Bio Info de Usuario-->
+    <EditText
+        android:id="@+id/bioEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/dobEt"
+        android:minHeight="90dp"
+        android:gravity="start"
+        android:background="@drawable/shape_rectangle"
+        android:padding="10dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:hint="descripción"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/horario"
+            android:textColor="@color/text_redesign"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Establecer horario"
+            android:onClick="Horarios"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/lunes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L"
+                android:layout_weight="1"
+                android:textColor="@color/text_redesign"
+                android:theme="@style/MyCheckbox"/>
+            <CheckBox
+
+                android:id="@+id/martes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:layout_weight="1"
+                android:textColor="@color/text_redesign"
+                android:theme="@style/MyCheckbox"/>
+            <CheckBox
+                android:id="@+id/miercoles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:layout_weight="1"
+                android:textColor="@color/text_redesign"
+                android:theme="@style/MyCheckbox"/>
+            <CheckBox
+                android:id="@+id/jueves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="J"
+                android:layout_weight="1"
+                android:textColor="@color/text_redesign"
+                android:theme="@style/MyCheckbox"/>
+
+            <CheckBox
+                android:id="@+id/viernes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V"
+                android:layout_weight="1"
+                android:textColor="@color/text_redesign"
+                android:theme="@style/MyCheckbox"/>
+
+            <CheckBox
+                android:id="@+id/sabado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:layout_weight="1"
+                android:textColor="@color/text_redesign"
+                android:theme="@style/MyCheckbox"/>
+
+            <CheckBox
+                android:id="@+id/domingo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:textColor="@color/text_redesign"
+                android:layout_weight="1"
+                android:theme="@style/MyCheckbox"/>
+        </LinearLayout>
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- FAB: Agregar Registro-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_done_white" />
+
+</RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

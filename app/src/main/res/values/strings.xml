@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProyectSQLite</string>
+
+    <string name="details_store">Detalles de la tienda</string>
+    <string name="ingresar_datos">Ingrese los datos</string>
+    <string name="horario">Horario de trabajo</string>
+    <string name="imagen_store">Seleccione una Imagen para su tienda</string>
+
+
+    <string name="registrar">REGISTRAR</string>
+</resources>

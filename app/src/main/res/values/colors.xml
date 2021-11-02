@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#009688</color>
+
+
+
+
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+
+
+    <!-- Colores Light -->
+    <color name="forms_light">#F1F1F1</color>
+    <color name="form_sub">#989898</color>
+    <color name="danger_light">#FF3131</color>
+    <color name="danger_pressed_light">#BC2727</color>
+    <color name="success_light">#00CA72</color>
+    <color name="success_pressed_light">#01A85F</color>
+    <color name="black">#282828</color>
+    <color name="principal_light">#FF7F23</color>
+    <color name="principal_lights">#D16A1F</color>
+    <color name="foregound_light">#FFF4E4</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="searchs">#FAFAFA</color>
+    <color name="floating_btn_edit">#373E52</color>
+
+    <!-- Colores Dark -->
+    <color name="forms_dark">#F1F1F1</color>
+    <color name="danger_dark">#FF3131</color>
+    <color name="danger_pressed_dark">#BC2727</color>
+    <color name="success_dark">#00CA72</color>
+    <color name="success_pressed_dark">#01A85F</color>
+    <color name="principal_dark">#2398FF</color>
+    <color name="principal_darks">#1B6BB1</color>
+    <color name="foregound_dark">#FFF4E4</color>
+
+
+
+    <!-- Material SAMPLE DARK text / items colors -->
+    <color name="material_drawer_primary_text">#272727</color>
+    <color name="black_stroke">#16141414</color>
+    <color name="black_hint">#56333333</color>
+    <!-- Material SAMPLE DARK drawer colors -->
+    <color name="wall_edit">#F8F9FB</color>
+    <color name="text_redesign">#46444E</color>
+    <color name="half_black">#808080</color>
+    <color name="colorGray1">#C0B6B6</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorGray">#e4e4e4</color>
+</resources>

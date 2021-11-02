@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/searchs" />
+
+
+
+            <TextView
+                android:id="@+id/TextVTitleReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Datos de Usuario:"
+                android:textColor="#006064"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.179"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="#000"
+                app:layout_constraintTop_toBottomOf="@+id/TextVTitleReg"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/tvusuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Usuario"
+                android:textColor="#006064"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.139"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextVTitleReg" />
+
+            <EditText
+                android:id="@+id/editTextTextUserName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:background="@drawable/forms_designs"
+                android:ems="10"
+                android:hint="Ingrese su Usuario"
+                android:inputType="textPersonName"
+                android:textColor="@color/text_redesign"
+                android:textColorHint="@color/black_hint"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvusuario" />
+
+            <TextView
+                android:id="@+id/textViewContraseña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Contraseña"
+                android:textColor="#006064"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.151"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextUserName" />
+
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Ingrese su Contraseña"
+                android:background="@drawable/forms_designs"
+                android:ems="10"
+                android:backgroundTintMode="src_in"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:textColor="@color/text_redesign"
+                android:textColorHint="@color/black_hint"
+                app:layout_constraintTop_toBottomOf="@+id/textViewContraseña" />
+
+            <Button
+                android:id="@+id/ImgBtnSave"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_ok"
+                android:text="@string/registrar"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:onClick="RegistrarDataUser"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+                app:srcCompat="@drawable/ic_baseline_save_24"
+                tools:ignore="VectorDrawableCompat" />
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
